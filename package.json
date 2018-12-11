@@ -1,0 +1,16 @@
+{
+  "name": "websocket_rabbit_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "publisher_to_ws.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "lodash": "^4.17.11",
+    "websocket": "^1.0.28"
+  }
+}
