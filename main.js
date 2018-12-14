@@ -10,7 +10,7 @@ async function WSConnect() {
   try {
     console.log("[*] WS ready");
     let amqpResponses = await amqp_consumer();
-    let amqp_publisher = await amqp_publisher();
+    let amqpPublisher = await amqp_publisher();
     console.log("[*] rabbitMQ ready");
 
     wsServer.on("request", async req => {
@@ -29,7 +29,7 @@ async function WSConnect() {
         clients.forEach(client => {
           client.sendUTF(msgString);
         });
-        amqp_publisher(msgString);
+        amqpPublisher(msgString);
       });
 
       connection.on("close", (reason, desc) => {
