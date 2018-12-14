@@ -3,6 +3,8 @@
 This is a demostration about how achieve a bidireccional communication with rabbitMQ and websockets,
 default rabbitMQ queue is named tasks but you can change this using an environment variable WSTOAMQQUEUE
 
+Code updated using Async await :D
+
 <br>
 
 <br>
